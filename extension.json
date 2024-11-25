@@ -1,32 +1,19 @@
 {
     "identifier": "com.cvickery.wrap-text",
-    "name": "Text Wrapper",
-    "organization": "C. Vickery",
+    "name": "Wrap Text",
+    "organization": "cvickery.com",
     "description": "Wraps text to a specified width while preserving indentation",
     "version": "1.0",
     "categories": ["commands"],
     "main": "main.js",
     "activationEvents": ["onCommand:wrap-text.wrapSelection"],
-    "config": [
-        {
-            "key": "wrap-text.maxWidth",
-            "title": "Maximum Line Width",
-            "type": "number",
-            "default": 100
-        }
-    ],
-    "commands": {
-        "editor": [
-            {
-                "title": "Wrap Text",
-                "command": "wrap-text.wrapSelection",
-                "when": "editorHasSelection"
-            }
-        ]
-    },
-    "keymap": {
-        "mac": {
-            "ctrl-w": "wrap-text.wrapSelection"
-        }
-    }
+    "config": [{"key": "wrap-text.maxWidth",
+                "title": "Maximum Line Width",
+                "type": "number",
+                "default": 100}],
+
+    "commands": {"editor": [{"title": "Text Wrapper",
+                             "command": "wrap-text.wrapSelection",
+                             "when": "editorHasSelection",
+                             "shortcut": "ctrl-w"}]}
 }
