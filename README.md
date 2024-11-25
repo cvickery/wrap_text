@@ -3,6 +3,8 @@
 
 A Nova extension that wraps lines of text to a specified width while preserving indentation.
 
+I use this to make HTML paragraphs easier to read while editing the code.
+
 ## Features
 
 - Wraps text to configurable line width (default 100 characters)
@@ -12,9 +14,13 @@ A Nova extension that wraps lines of text to a specified width while preserving 
 
 ## Usage
 
-1. Select the text you want to wrap
-2. Use the Command Palette and search for "Wrap Text"
-3. Or use the keyboard shortcut (Default: Ctrl-W)
+1. Separate paragraphs with empty lines. The indent of the first line of each paragraph determines
+the indent for all lines in the paragraph.
+2. Select the paragraph(s) you want to wrap.
+3. Wrap the lines using any of the following:
+  - Type the keyboard shortcut (Default: Ctrl-W)
+  - Select the Wrap Text item from the Editor menu
+  - Bring up the Command Palette (Command-P) and search for "Wrap Text"
 
 ## Configuration
 
